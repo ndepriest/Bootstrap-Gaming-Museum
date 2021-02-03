@@ -1,0 +1,171 @@
+body {
+  background: #111;
+  font-family: "Poppins", sans-serif;
+  color: rgb(182, 182, 182);
+}
+
+#mainNavbar .navbar-brand {
+  color: #39FF14;
+  font-size: 1.75rem;
+  padding-left: 1.25rem;
+  text-shadow:
+  0 0 5px #29b810,
+  0 0 10px #4b5e47,
+  0 0 20px #252e23,
+  0 0 40px#252e23,
+  0 0 80px#252e23,
+  0 0 90px#252e23,
+  0 0 100px#252e23,
+  0 0 150px #252e23;
+}
+
+#mainNavbar .nav-link {
+ color: #999;
+ letter-spacing: 1px;
+
+}
+
+#mainNavbar .nav-link:hover {
+  color: #39FF14;
+}
+
+#mainNavbar {
+  background-color: #000;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  font-weight: 100;
+  
+}
+
+@font-face {
+  font-family: snes;
+  src: url(fonts/snes.ttf);
+}
+.rainbow {
+  font-family: "Poppins";
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: red;
+}
+
+.rainbow .slash {
+  color: #39FF14;
+  text-shadow:
+    0 0 5px #39FF14,
+    0 0 10px #39FF14,
+    0 0 20px #39FF14,
+    0 0 40px#39FF14,
+    0 0 80px#39FF14,
+    0 0 90px#252e23,
+    0 0 100px#252e23,
+    0 0 150px#252e23;
+  padding-left: 4px;
+  font-weight: 100;
+  font-size: 3rem;
+}
+
+@media (max-width: 1200px) {
+  .rainbow {
+    font-size: 2rem;
+  }
+
+  .rainbow .slash {
+    font-size: 2rem;
+  }
+}
+
+.rainbow .letter {
+  animation: clr 3s infinite ease-in-out;
+}
+
+.rainbow .letter:nth-child(6n+2),
+.rainbow .letter:nth-child(6n+6){
+  animation-delay: .1s;
+}
+
+.rainbow .letter:nth-child(6n+3),
+.rainbow .letter:nth-child(6n+5){
+  animation-delay: .2s;
+}
+
+.rainbow .letter:nth-child(6n+4) {
+  animation-delay: .3s;
+}
+
+@keyframes clr {
+    0% {
+        color: red;
+    }
+    15% {
+        color: orange;
+    }
+    30% {
+        color: yellow;
+    }
+    45% {
+        color: #39FF14;;
+    }
+    60% {
+        color: DarkTurquoise;
+    }
+    75% {
+        color: blue;
+    }
+    100% {
+        color: purple;
+    }
+}
+
+@keyframes move {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(0, 50%, 0);
+  }
+  75% {
+    transform: translate3d(0, -50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.first {
+  color: #04d9ff;
+  font-weight: 100;
+  font-size: 2.25rem;
+}
+
+.middle {
+  color: #FBE350;
+  font-weight: 100;
+  font-size: 2.25rem;
+}
+
+.last {
+  color: #FC55FC;
+  font-weight: 100;
+  font-size: 2.25rem;
+}
+
+.blurb p {
+ color: white;
+ font-weight: 100;
+ font-size: 1.125;
+ line-height: 2;
+}
+
+i {
+  color: #888;
+  
+}
+
+.content {
+  margin-top: 100px;
+}
+
+.contentTop {
+  margin-top: 50px;
+}
